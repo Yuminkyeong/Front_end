@@ -1,0 +1,338 @@
+@charset "UTF-8";
+ul,li {list-style:none;}
+.clearfix::after {content:'';display:block;clear:both;}
+
+
+/* 햄버그바 */
+
+/* .nav-btn-wrap {
+    float:right;
+    position:relative;
+    width:22px;
+    margin-right:20px;
+}
+.nav-btn-wrap a.nav-btn {
+    position: relative;
+    display:block;
+    width:100%;
+    height:100%;
+}
+.nav-btn-wrap a.nav-btn i.bar {
+    position:absolute;
+    left:50%;
+    width:100%;
+    height:2px;
+    background: #fff;
+    transition:all .6s ease-in-out;
+}
+.nav-btn-wrap a.nav-btn i.bar1 {
+    top:0;
+    left:50%;
+    width:22px;
+    height:2px;
+    background: #fff;
+}
+.nav-btn-wrap a.nav-btn i.bar1.addBar {
+    top:50%;
+    left:50%;
+    transform: rotate(135deg);
+    animation: ani1 3s ;
+}
+
+@keyframes ani1 {
+    0% { top:0%; left:50%;transform: rotate(0deg);}
+   50% { top:50%;left:50%;transform: rotate(0deg);}
+  100% { top:50%;left:50%;transform: rotate(135deg);}
+
+}
+
+.nav-btn-wrap a.nav-btn i.bar2 {
+    top:50%;
+    left:50%;
+    width:22px;
+    margin-top:-1px;
+    height:2px;opacity: 1;
+    background: #fff;
+}
+.nav-btn-wrap a.nav-btn i.bar2.addBar {
+    opacity:0;
+    animation:ani2 3s;
+}
+
+@keyframes ani2 {
+     0% {opacity:1;}
+    50% {opacity:0;}
+   100% {opacity:0;}
+
+}
+
+.nav-btn-wrap a.nav-btn i.bar3 {
+    bottom:0%;
+    left:50%;
+    width:22px;
+    height:2px;
+    background: #fff;
+}
+.nav-btn-wrap a.nav-btn i.bar3.addBar {
+    bottom:50%;
+    left:50%; 
+    margin-bottom: -2px; 
+    transform: rotate(-135deg);
+    animation:ani3 3s;
+}
+
+@keyframes ani3 {
+    0% {bottom:0%;left:50%;  margin-bottom: 0px;transform: rotate(0deg);} 
+   50% {bottom:50%;left:50%; margin-bottom: 0px;transform: rotate(0deg);}
+  100% {bottom:50%;left:50%; margin-bottom: -2px; transform: rotate(-135deg);}
+
+}
+ */
+
+/* popup page */
+
+.pop-container{
+    width:100%;
+    display:flex;
+}
+
+/* .pop-container > .img-box {
+    background: url(../../../index_2/img/main_2.png)no-repeat 23% 0%;
+    background-size: cover;
+    width:40%;
+} */
+.pop-container > .text-box {
+    width:100%;
+}
+.pop-container > .text-box .text-box-gap {
+    padding: 57px;    
+}
+/* sub-list */
+.sub-list > ul {
+    padding-bottom:50px;
+}
+.sub-list > ul > li > a {
+    transition: all 1s ease-in-out;
+    font-size:25.2px;
+    color:#fff;
+}
+.sub-list > ul > li > a:hover {
+    
+    border-bottom: 1px solid #FFBF00;
+    color:#FFBF00
+}
+/* sns-list */
+.sns-list > ul > li {
+    padding:3px 0;
+    border-bottom:1px solid rgba(255,255,255, .15);
+
+}
+
+.sns-list > ul > li > a {
+    transition: all .6s ease-in-out;
+    font-size:14px;
+    color:#fff;
+}
+.sns-list > ul > li > a:hover {   
+    color:#FFBF00
+}
+
+.sns-list > ul > li > a > i {
+    padding-right:20px;
+    color:#fff;
+}
+
+/* section3 slide */
+.content-box {
+    width:100%;
+}
+
+.left-box {
+    float:left;
+    width:50%;
+    padding-top:60px;
+}
+
+.left-box-wrap > p {
+    font-size: 24px;
+    padding-top: 24px;
+    padding-left: 50px;
+}
+.left-box-wrap > h1 {
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    padding-left: 50px;
+}
+
+.right-box{
+    float:right;
+    width:50%;
+    text-align:center;
+}
+
+.slide-container{
+    position: relative;
+    width:100%;
+    height:100%;    
+}
+.slide-view {
+    z-index:1;
+    position:relative;
+    width:100%;
+    height: 100%;
+    overflow:hidden;
+}
+.slide-wrap{
+    position:relative;
+    width:calc(648px*6);
+    height:100%;
+    margin-left:-648px;
+}
+.slide-wrap >.slide {
+    float: left;
+    width:648px;
+    height:100%;
+}
+.slide >.text-box {
+    padding-top: 50px;
+}
+.slide >.text-box > h3 {
+    font-size:24px;
+    font-weight:700;
+    padding-bottom: 10px;
+}
+
+.slide >.text-box > p {
+    font-size:24px;
+    line-height: 150%;
+}
+
+/* 좌우 버튼 */
+.slide-container > .left-btn {
+    z-index:2;
+    position:absolute;
+    top:30%;
+    left:50px;
+}
+.slide-container > .right-btn > a ,
+.slide-container > .left-btn > a {
+    font-size: 72px;
+    color:#ff9900 !important;
+}
+
+.slide-container > .right-btn {
+    z-index:2;
+    position:absolute;
+    top:30%;
+    right:50px;
+}
+
+/* 페이지 버튼 */
+
+.slide-container > .page-btn-wrap {
+    z-index:2;
+    position:absolute;
+    left:-10px;
+    bottom:-50px;
+    width:100%;
+    text-align:center;
+}
+
+.slide-container > .page-btn-wrap > li {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:0 5px;
+}
+
+.slide-container > .page-btn-wrap > li > a {
+    display:block;
+    width:100%;
+    height:100%;
+    background:#000;
+    border-radius:50%;
+    border: 1px solid #cfcfcf;
+}
+
+.slide-container > .page-btn-wrap > li > a.addPage {
+    background:#fff;
+    border:1px solid #000;
+}
+
+/* sub-popup page */
+.sub-popup {
+    z-index:9999;
+    position:fixed;
+    top:20%;
+    right:-15%;
+    width:250px;
+    height:300px;
+    background:transparent;
+    transition: all 1s ;
+}
+.sub-popup.addSub {
+    z-index:99;
+    position:fixed;
+    top:20%;
+    right:3%;
+    width:250px;
+    height:300px;
+    background:transparent;
+}
+
+.sub-popup > ul > li {
+    
+    border-radius: 10px;
+    border:2px solid blue;
+}
+.sub-popup > ul > li > a{
+    padding-left: 10px;
+    text-indent: 10px;
+    color:#222;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .content-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-box-wrap > h1 {
+        width: 100%;
+    }
+    .left-box {
+        float:initial;
+        width: 100%;
+    }
+    .left-box-wrap > h1 {
+        padding-left: 0;
+        font-size: 21px;
+    }
+    .left-box-wrap > p {
+        padding-left: 0;
+        font-size: 14px;
+    }
+    .right-box {
+        float:initial;
+        width: 100%;
+    }
+    .slide-wrap >.slide {
+        width: 340px;
+    }
+    .footer-menu-sns-left {
+        display:flex;
+    }
+    .footer-menu-sns-left .sns-right-box {
+        margin-right:10px;
+    }
+    .footer-menu-sns-left a {
+        color:#000;
+    }
+}
+/* 섹션5 */
+
+.col-12 > .High-quality:hover {
+    color: sandybrown;
+}

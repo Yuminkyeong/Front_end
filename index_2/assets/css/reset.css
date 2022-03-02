@@ -1,0 +1,17 @@
+@charset "UTF-8";
+* {margin:0;padding:0;vertical-align:middle;}
+html,body {width:100%;height:100%;}
+html {overflow-y:scroll;}
+body {font:normal 14px/1  'Nanum Gothic','Times New Roman', 'Noto Sans KR',;color:#444;background:#fff;}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:14px;}
+em,i,address {font-style:normal;}
+ul,li {list-style:none;}
+.clearfix::after {content:'';display:block;clear:both;}
+.blind {display:block;text-indent:-2000px;overflow:hidden;}
+a {color:#444;text-decoration:none;}
+a:hover {outline:0;}
+a:focus {outline:0;}
+table {border-collapse:collapse;}
+header,main,section,footer,nav {display:block;}
+
+input{outline: 0;}
